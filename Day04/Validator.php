@@ -61,9 +61,6 @@ class Validator
 
     private static function validatePassportId($value): bool
     {
-        if (preg_match('/^\d{9}$/', $value) !== 1) {
-            return false;
-        }
-        return true;
+        return preg_match('/^\d{9}$/', $value) === 1;
     }
 }
