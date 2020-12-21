@@ -15,14 +15,14 @@ function solvePartOne(string $filepath): int
         $letter = $matchResult[3];
         $password = str_split($matchResult[4]);
 
-        $letterOccurences = 0;
+        $letterOccurrences = 0;
         foreach ($password as $passwordLetter) {
-            $letterOccurences += ($passwordLetter === $letter)
+            $letterOccurrences += ($passwordLetter === $letter)
                 ? 1
                 : 0;
         }
 
-        $correct += ($min <= $letterOccurences && $letterOccurences <= $max)
+        $correct += ($min <= $letterOccurrences && $letterOccurrences <= $max)
             ? 1
             : 0;
     }
