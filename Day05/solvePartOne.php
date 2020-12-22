@@ -16,11 +16,7 @@ function solvePartOne(string $filepath): int
 
 function getSeat($code): int
 {
-    $binary = str_replace('F', '0', $code);
-    $binary = str_replace('B', '1', $binary);
-    $binary = str_replace('L', '0', $binary);
-    $binary = str_replace('R', '1', $binary);
-
+    $binary = str_replace(['F', 'B', 'L', 'R'], ['0', '1', '0', '1'], $code);
     return bindec($binary);
 }
 
