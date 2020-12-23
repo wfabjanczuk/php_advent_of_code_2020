@@ -37,4 +37,4 @@ function getUnanimousPositivesCount($currentGroupPositives, $partialSumOfPeople)
     return $unanimousPositivesCount;
 }
 
-echo solvePartTwo('input.txt');
+echo solvePartTwo(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

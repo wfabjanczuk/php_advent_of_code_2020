@@ -26,4 +26,4 @@ function solvePartTwo(string $filepath): int
     return $correct;
 }
 
-echo solvePartTwo('input.txt');
+echo solvePartTwo(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

@@ -19,4 +19,4 @@ function solvePartOne(string $filepath): int
     throw new \RuntimeException('No solution.');
 }
 
-echo solvePartOne('input.txt');
+echo solvePartOne(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

@@ -25,4 +25,4 @@ function getSeat($code): int
     return bindec($binary);
 }
 
-echo solvePartTwo('input.txt');
+echo solvePartTwo(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

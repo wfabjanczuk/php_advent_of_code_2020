@@ -23,4 +23,4 @@ function solvePartTwo(string $filepath): int
     throw new \RuntimeException('No solution.');
 }
 
-echo solvePartTwo('input.txt');
+echo solvePartTwo(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

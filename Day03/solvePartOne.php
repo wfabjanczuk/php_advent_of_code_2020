@@ -26,4 +26,4 @@ function solvePartOne(string $filepath): int
     return $trees;
 }
 
-echo solvePartOne('input.txt');
+echo solvePartOne(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');
