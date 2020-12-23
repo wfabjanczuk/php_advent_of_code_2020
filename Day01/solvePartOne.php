@@ -6,7 +6,7 @@ function solvePartOne(string $filepath): int
 
     foreach (file($filepath) as $line) {
         if (trim($line) === '') {
-            throw new \RuntimeException('Incorrect file format.');
+            throw new RuntimeException('Incorrect file format.');
         }
 
         $currentNumber = (int)$line;
@@ -16,7 +16,7 @@ function solvePartOne(string $filepath): int
 
         $reverseDifferenceMap[2020 - $currentNumber] = $currentNumber;
     }
-    throw new \RuntimeException('No solution.');
+    throw new RuntimeException('No solution.');
 }
 
 echo solvePartOne(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');

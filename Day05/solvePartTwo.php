@@ -16,7 +16,7 @@ function solvePartTwo(string $filepath): int
         }
     }
 
-    throw new \Exception('No solution.');
+    throw new Exception('No solution.');
 }
 
 function getSeat($code): int

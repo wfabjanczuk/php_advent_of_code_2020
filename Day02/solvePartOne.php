@@ -7,7 +7,7 @@ function solvePartOne(string $filepath): int
 
     foreach (file($filepath) as $line) {
         if (preg_match('/(\d+)-(\d+) (\w): (\w+)/', $line, $matchResult) !== 1) {
-            throw new \RuntimeException('Incorrect file format.');
+            throw new RuntimeException('Incorrect file format.');
         }
 
         $min = (int)$matchResult[1];
