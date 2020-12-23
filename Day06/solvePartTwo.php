@@ -15,9 +15,9 @@ function solvePartTwo(string $filepath): int
             continue;
         }
 
-        foreach (str_split(trim($line)) as $answer) {
-            $currentGroupPositives[$answer] ??= 0;
-            $currentGroupPositives[$answer]++;
+        foreach (str_split(trim($line)) as $question) {
+            $currentGroupPositives[$question] ??= 0;
+            $currentGroupPositives[$question]++;
         }
         $partialSumOfPeople++;
     }

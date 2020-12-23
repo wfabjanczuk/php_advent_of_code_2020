@@ -12,8 +12,8 @@ function solvePartOne(string $filepath): int
             continue;
         }
 
-        foreach (str_split(trim($line)) as $answer) {
-            $currentPositives[$answer] = 1;
+        foreach (str_split(trim($line)) as $question) {
+            $currentPositives[$question] = 1;
         }
     }
 
