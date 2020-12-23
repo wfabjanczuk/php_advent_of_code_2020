@@ -1,6 +1,6 @@
 <?php
 
-require_once 'PartOneSolver.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'PartOneSolver.php';
 
 use Day04\PartOneSolver;
 
