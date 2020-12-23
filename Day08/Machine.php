@@ -50,7 +50,10 @@ class Machine
             }
             $this->executedInstructionList[] = $currentInstruction->getId();
         }
-        $this->success = true;
+
+        if ($nextInstructionId === $instructionListCount) {
+            $this->success = true;
+        }
         return $this->accumulator;
     }
 }
