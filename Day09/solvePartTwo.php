@@ -45,8 +45,17 @@ function findContiguousSumInFile(string $filepath, int $offset, int $sum): int
 
 function sumMinMax(array $buffer): int
 {
-    sort($buffer);
-    return reset($buffer) + end($buffer);
+    $min = $max = $buffer[0];
+
+    foreach ($buffer as $number) {
+        $max = $max < $number
+            ? $number
+            : $max;
+        $min = $number < $min
+            ? $number
+            : $min;
+    }
+    return $min + $max;
 }
 
 echo solvePartTwo(__DIR__ . DIRECTORY_SEPARATOR . 'input.txt');
