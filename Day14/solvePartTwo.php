@@ -1,8 +1,8 @@
 <?php
 
-function solvePartTwo(string $filename): int
+function solvePartTwo(string $filepath): int
 {
-    $lines = file($filename);
+    $lines = file($filepath);
 
     $i = 0;
     $iMax = count($lines);

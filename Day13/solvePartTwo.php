@@ -1,8 +1,8 @@
 <?php
 
-function solvePartTwo(string $filename): int
+function solvePartTwo(string $filepath): int
 {
-    $lines = file($filename);
+    $lines = file($filepath);
     $buses = [];
 
     $timetable = explode(',', $lines[1]);
